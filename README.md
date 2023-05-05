@@ -11,7 +11,7 @@ Operazioni sulle directory:
 
 
 Operazioni su i file 
--Creazione di un file ( Inizialmente il nome di un file sarà un id che otteniamo tramite il modulo uuid)
+-Creazione di un file 
 -Modifica del contenuto di un file
 -Rinomina nome del file
 -Ricerca di un file
