@@ -1,4 +1,4 @@
-# file-system-JavaScript
+# File-system-JavaScript
 
 Realizzazione di un file system tramite javascript, in cui possiamo andare ad effettuare delle operazioni sia sulle cartelle che su i file.
 
