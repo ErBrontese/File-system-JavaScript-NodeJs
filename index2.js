@@ -2,7 +2,6 @@ const fs = require("fs/promises");
 const express = require("express");
 const cors = require("cors");
 const _ = require("lodash");
-const { v4: uuid } = require("uuid");
 
 const app = express();
 
@@ -59,8 +58,8 @@ app.get("/showFile", async (req, res) => {
 
 //Creazione del file 
 app.post("/newFile", async (req, res) => {
-    const id = uuid();
     const content = req.body.content;
+    const nameFile = req.body.nameFile;
 
     if (!content) {
         return res.sendStatus(400);
@@ -120,7 +119,7 @@ app.post("/updateFile", async (req, res) => {
 });
 
 
-////////////////////Directory///////////////////////////////////////////////////////////
+//////////////////// Directory ///////////////////////////////////////////////////////////
 
 //Creazione di una directory
 app.post("/newDirectory", async (req, res) => {
